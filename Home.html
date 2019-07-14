@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>RubixKitchen | Welcome</title>
+    <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+    <link rel="stylesheet" href="JavaScript.js" type="text/javascript" />
+    <script src="https://kit.fontawesome.com/3d1e1b10b6.js"></script>
+</head>
+<body>
+   <div class="main-content">
+       <!--Nav-bar-->
+
+       <div class="nav-bar-heading">
+           <h1 class="bar-heading">RubixKitchen</h1>
+           <nav class="nav-bar">
+               <ul>
+                   <li><a href="Home.html">Home</a></li>
+                   <li><a href="#">Food</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Contact</a></li>
+               </ul>
+           </nav>
+       </div>
+       <!--Slide-show-->
+       <div class="slide-show-container">
+           <div class="slide-show">
+               <img src="images/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg" style="width:100%; height:500px;" />
+               <div class="image-text">
+                   <h3>Ribs</h3>
+                   <p>Get the tasty ribs</p>
+
+               </div>
+              
+           </div>
+           
+           <div class="slide-show">
+               <img src="images/dan-gold-4_jhDO54BYg-unsplash.jpg"  style="width:100%; height:500px;"/>
+               <div class="image-text">
+                   <h3>Fresh Salad</h3>
+                   <p>Eat fresh, crunchy salad</p>
+               </div>
+               
+           </div>
+           <div class="slide-show">
+               <img src="images/micheile-henderson-eB3Pi5-U8l8-unsplash.jpg"  style="width:100%; height:500px;" />
+               <div class="image-text">
+                   <h3>Tasty Chicken</h3>
+                   <p>Get the best tasty roasted Chicken</p>
+                   
+               </div>
+              
+           </div>
+          
+       </div>
+       <section class="info">
+           <img src="images/kobby-mendez-xBFTjrMIC0c-unsplash.jpg" style="width:600px; height:300px;">
+           <div>
+               <h2>Select your cocktail from a wide variety</h2>
+               <p>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap i
+                    nto electronic typesetting, remaining essentially
+                    unchanged.</p>
+               <br />
+               <a href="Cocktails.html" class="btn">Learn More</a>
+           </div>
+           
+       </section>
+
+       <section class="boxes">
+
+           <div class="box">
+               <i class="fas fa-utensils fa-4x" ></i>
+               <h2>Home Grown Food</h2>
+           <p> All our products are straight from the farm</p>
+               <a href="#" class="btn" style="align-content:center;">View Products</a>
+
+           </div>
+           <div class="box">
+               <i class="fas fa-user-check fa-4x"></i>
+               <h2>Top-Nocth Chefs</h2>
+               <p> Our Chefs prepare your food with absolute excellence</p>
+               <a href="MeetChefs.html" class="btn">Meet the Chefs</a>
+           </div>
+
+           <div class="box">
+               <i class="fas fa-truck fa-4x"></i>
+               <h2>Delivery</h2>
+               <p>Make an order and get food delivered straight to your door step</p>
+               <a href="#" class="btn">Get your order</a>
+           </div>
+
+          
+       </section>
+
+       <footer>
+           ChefRue &copy; 2018
+       </footer>
+   </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            
+            var slides = document.getElementsByClassName("slide-show");
+         
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+          
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+           
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+      
+</body>
+</html>

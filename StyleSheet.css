@@ -1,0 +1,166 @@
+﻿/**CSS Variable*/
+:root {
+    --primary: #660000;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+    --dark: #333;
+}
+html {
+    box-sizing: border-box;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/**Slide-Show*/
+.slide-show-container
+{
+    margin:auto;
+    max-width: 100%;
+    position:relative;
+    max-height:450px;
+    /*padding-top: 2rem;*/
+    box-shadow: var(--shadow);
+    margin-top:1rem;
+}
+.slide-show{
+    display:none;
+}
+.image-text{
+    text-align:center;
+    font-size:1.6rem;
+  margin-bottom:80px;
+    position:absolute;
+    bottom: 8px;
+    padding-left:580px;
+    /* width: 100%;*/
+    color: white;
+    display: block;
+
+}
+/*.image-text h3{
+    color: white;
+   padding-bottom:10px;
+
+}*/
+
+/* information Section*/
+.info {
+    padding-top: 1rem;
+   margin-top:4rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+    /*margin: 1rem;*/
+}
+/*.info a{
+    color:black;
+    background-color: var(--primary);
+}*/
+.btn {
+    
+    color: black;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 2px solid var(--primary);
+    border-radius:8px;
+    font-size:1.5rem;
+}
+.btn:hover
+{
+    transform:scale(1.5);
+}
+
+/**Navigation*/
+ul {
+    margin: 0;
+    padding-top: 27px;
+    overflow: hidden;
+    list-style: none;
+    padding-left:2em;
+}
+li{
+    display:inline;
+    padding-top:100px;
+}
+
+a{
+    text-decoration: none;
+    margin-right:2.5rem;
+    font-size:2rem;
+    margin-top:2rem;
+    color: white;
+    padding-top:100px;
+   
+}
+li a{
+    padding-top:50px;
+}
+.nav-bar-heading {
+    display: grid;
+    grid-template-areas: 'bar-heading  nav-bar';
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.bar-heading{
+    font-family: Chiller;
+    font-size:2.5rem;
+    color: white;
+    padding-left:1.5rem;
+}
+/**Boxex*/
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+
+.box {
+   
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    margin: 1rem;
+}
+footer
+{
+    background-color: var(--primary);
+    color: white;
+}
+
+/**Meet the Chefs page*/
+.chefs{
+    margin:10px;
+}
+.chef
+{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+
+}
+.chef img
+{
+    flex: 1;
+   padding:20px 20px;
+}
+.chef-grid{
+    flex:1;
+    align-items: center;
+    display:grid;
+    grid-template-areas: 
+        'h3'
+        'p';
+   grid-gap:10px;
+}
+.chef h3{
+    text-align: center;
+   
+
+}
